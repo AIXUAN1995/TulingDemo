@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView 
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"/>
+    <ImageView 
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_time"
+        android:id="@+id/iv_right"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:padding="10dp"
+        android:src="@drawable/visitor"/>
+    <!-- <TextView 
+        android:id="@+id/tv"
+        android:layout_toLeftOf="@id/iv_right"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chatto_bg_normal"
+        android:gravity="center"/> -->
+	<EditText
+	    android:id="@+id/et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chatto_bg_normal"
+        android:layout_toLeftOf="@id/iv_right"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/tv_time"
+        android:inputType="none"
+        android:cursorVisible="false"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textIsSelectable="true" />
+</RelativeLayout>
